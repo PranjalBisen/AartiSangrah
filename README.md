@@ -4,7 +4,8 @@
 
 Built with a clean and elegant UI using modern Android development tools, the app is simple, intuitive, and designed for users of all age groups.
 
-**👉 [Download the App]([https://your-link-here.com](https://drive.google.com/file/d/1ibZJ9_vqeQz_3hqd_zxZZ7UdMn23WytQ/view?usp=sharing))**
+**👉 [Download the App](https://drive.google.com/file/d/1ibZJ9_vqeQz_3hqd_zxZZ7UdMn23WytQ/view?usp=sharing)**
+
 
 ---
 
