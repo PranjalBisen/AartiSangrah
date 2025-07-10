@@ -23,6 +23,9 @@ import androidx.navigation.NavController
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import com.example.myapp.ui.navigation.Routes
+import com.google.firebase.Firebase
+import com.google.firebase.analytics.analytics
+import com.google.firebase.analytics.logEvent
 
 @Composable
 fun HanumanScreen(navController: NavController) {
@@ -65,7 +68,14 @@ fun HanumanScreen(navController: NavController) {
                     .fillMaxWidth()
                     .height(65.dp)
                     .clip(RoundedCornerShape(16.dp))
-                    .clickable { navController.navigate(route) }
+                    .clickable {
+                        val analytics = Firebase.analytics
+                        analytics.logEvent("aarti_opened") {
+                            param("god", "Ganpati")
+                            param("aarti_title", title)
+                        }
+                        navController.navigate(route)
+                    }
                     .shadow(6.dp, RoundedCornerShape(16.dp)),
                 color = MaterialTheme.colorScheme.surfaceVariant
             ) {

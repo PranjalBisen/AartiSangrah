@@ -23,11 +23,17 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapp.ui.navigation.Routes
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.analytics.logEvent
+import com.google.firebase.ktx.Firebase
 
 @Composable
 fun DeviScreen(navController: NavController) {
+    val analytics = Firebase.analytics
+
     val aartis = listOf(
         "दुर्गे दुर्घट भारी" to Routes.DURGA_AARTI_1,
         "जय अम्बे गौरी" to Routes.DURGA_AARTI_2,
@@ -70,7 +76,14 @@ fun DeviScreen(navController: NavController) {
                     .fillMaxWidth()
                     .height(65.dp)
                     .clip(RoundedCornerShape(16.dp))
-                    .clickable { navController.navigate(route) }
+                    .clickable {
+                        val analytics = Firebase.analytics
+                        analytics.logEvent("aarti_opened") {
+                            param("god", "Ganpati")
+                            param("aarti_title", title)
+                        }
+                        navController.navigate(route)
+                    }
                     .shadow(6.dp, RoundedCornerShape(16.dp)),
                 color = MaterialTheme.colorScheme.surfaceVariant
             ) {

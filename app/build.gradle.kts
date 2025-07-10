@@ -80,4 +80,7 @@ dependencies {
 
     implementation("com.google.firebase:firebase-auth-ktx")
 
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    implementation ("com.google.firebase:firebase-analytics-ktx")
+
 }
