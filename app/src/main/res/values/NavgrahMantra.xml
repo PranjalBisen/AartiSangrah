@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="SuryaBeejMantra">ॐ ह्रां ह्रीं ह्रौं सः सूर्याय नमः॥</string>
+        <string name="ChandraBeejMantra">ॐ श्रां श्रीं श्रौं सः चन्द्राय नमः॥</string>
+        <string name="MangalBeejMantra">ॐ क्रां क्रीं क्रौं सः भौमाय नमः॥</string>
+        <string name="BudhBeejMantra">ॐ ब्रां ब्रीं ब्रौं सः बुधाय नमः॥</string>
+        <string name="GuruBeejMantra">ॐ ग्रां ग्रीं ग्रौं सः गुरवे नमः॥</string>
+        <string name="ShukraBeejMantra">ॐ द्रां द्रीं द्रौं सः शुक्राय नमः॥</string>
+        <string name="ShaniBeejMantra">ॐ प्रां प्रीं प्रौं सः शनैश्चराय नमः॥</string>
+        <string name="RahuBeejMantra">ॐ भ्रां भ्रीं भ्रौं सः राहवे नमः॥</string>
+        <string name="KetuBeejMantra">ॐ स्रां स्रीं स्रौं सः केतवे नमः॥</string>
+</resources>

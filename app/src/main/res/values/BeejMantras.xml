@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="DigambaraChant">दिगंबर दिगंबर श्रीपाद वल्लभ दिगंबर।</string>
+
+        <string name="HanumanBeejMantra">ॐ ऐं भ्रीम हनुमते, श्री राम दूताय नमः॥</string>
+
+        <string name="MahalakshmiBeejMantra">ॐ श्रीं ह्रीं क्लीं महालक्ष्म्यै नमः॥</string>
+
+        <string name="SaraswatiBeejMantra">ॐ ऐं ह्रीं श्रीं वाग्देव्यै सरस्वत्यै नमः॥</string>
+
+        <string name="KrishnaChant">कृष्णाय वासुदेवाय हरये परमात्मने। प्रणतः क्लेशनाशाय गोविंदाय नमो नमः॥</string>
+    </resources>
